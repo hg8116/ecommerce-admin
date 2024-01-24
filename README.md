@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# eCommerce Admin
+
+Welcome to the repository of the eCommerce Admin Panel.
+
+## Project Overview
+
+The eCommerce admin is the control panel for [eCommerce store](https://ecommerce-store-green-eight.vercel.app/). The panel lets the user create multiple store easily and quickly. It provides features such as adding and updating products and there stock, helps in tracking the revenue and generates easy to use APIs.
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to run the project locally:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the Repository:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   git clone https://github.com/hg8116/ecommerce-admin.git
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Navigate to the Project Directory:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   cd ecommerce-admin
+   ```
 
-## Learn More
+3. **Install Dependencies:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Environment Variables**
+   Create a .env file inside the root folder and fill the following secrets -
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=""
+   CLERK_SECRET_KEY=""
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+   NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+   NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
-## Deploy on Vercel
+   DATABASE_URL=""
+   DIRECT_URL=""
+   NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
+   STRIPE_API_KEY=""
+   FRONTEND_STORE_URL=http://localhost:3001
+   STRIPE_WEBHOOK_SECRET=""
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **Run the Development Server:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) in your browser to view the eCommerce admin panel.
+
+## Customization
+
+Feel free to customize the landing page to fit your specific needs. Update content, modify styles, and add additional components as required.
+
+## Deployment
+
+This project is ready to be deployed to platforms like Vercel or Netlify. Refer to the documentation of your chosen hosting service for deployment instructions.
+
+## Contributing
+
+If you'd like to contribute to this project, please follow the standard GitHub flow: fork the repository, create a branch, make your changes, and submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Thank you for checking out our eCommerce Admin Panel! If you have any questions or feedback, feel free to open an issue.
+
+This project is just made for educational purpose, thank you to [Code With Antonio](https://www.youtube.com/@codewithantonio) for the tutorial.
